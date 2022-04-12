@@ -29,5 +29,5 @@ if __name__ == '__main__':
             app = config.make_wsgi_app()
 
     # This line is used to start serving on port 6543 on the localhost
-    server = make_server('0.0.0.0', 6000, app)
+    server = make_server('0.0.0.0', 6543, app)
     server.serve_forever()
