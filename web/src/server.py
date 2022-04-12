@@ -12,10 +12,6 @@ from pyramid.response import FileResponse
 def hello_world(request):
       print('Incoming request')
       return FileResponse('templates/index.html') # the HTML file to be shown
-def musicf(request):
-      print('Incoming request')
-      return FileResponse('music.html') # the HTML file to be shown
-
 
 if __name__ == '__main__':
     with Configurator() as config:
