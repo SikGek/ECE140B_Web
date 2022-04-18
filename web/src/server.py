@@ -14,8 +14,8 @@ def hello_world(request):
       return FileResponse('templates/index.html') # the HTML file to be shown
 def product(request):
       return FileResponse('templates/product.html')
-def kvp(request):
-      return FileResponse('templates/kvp.html')
+def KVP(request):
+      return FileResponse('templates/KVP.html')
 
 
 if __name__ == '__main__':
@@ -23,12 +23,12 @@ if __name__ == '__main__':
 
            # Adds different routes possible in the website
             config.add_route('main', '/')
-            config.add_route('product', '/productinfo')
-            config.add_route('kvp', '/kvp')
+            config.add_route('product', '/product')
+            config.add_route('KVP', '/KVP')
             # Directs the route to the function that can generate the view
             config.add_view(hello_world, route_name='main')
             config.add_view(product, route_name='product')
-            config.add_view(kvp, route_name='kvp')
+            config.add_view(KVP, route_name='KVP')
             config.add_static_view(name='/', path='./public', cache_max_age=3600)
             # This is the overall compiled app with the given configurations
             app = config.make_wsgi_app()
