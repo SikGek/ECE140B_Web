@@ -13,9 +13,9 @@ def hello_world(request):
       print('Incoming request')
       return FileResponse('templates/index.html') # the HTML file to be shown
 def productf(request):
-      return FileResponse('templates/product.html')
+      return FileResponse('product.html')
 def KVPf(request):
-      return FileResponse('templates/KVP.html')
+      return FileResponse('KVP.html')
 
 
 if __name__ == '__main__':
