@@ -12,9 +12,9 @@ from pyramid.response import FileResponse
 def hello_world(request):
       print('Incoming request')
       return FileResponse('templates/index.html') # the HTML file to be shown
-def product(request):
+def productf(request):
       return FileResponse('templates/product.html')
-def KVP(request):
+def KVPf(request):
       return FileResponse('templates/KVP.html')
 
 
@@ -27,8 +27,8 @@ if __name__ == '__main__':
             config.add_route('KVP', '/KVP')
             # Directs the route to the function that can generate the view
             config.add_view(hello_world, route_name='main')
-            config.add_view(product, route_name='product')
-            config.add_view(KVP, route_name='KVP')
+            config.add_view(productf, route_name='product')
+            config.add_view(KVPf, route_name='KVP')
             config.add_static_view(name='/', path='./public', cache_max_age=3600)
             # This is the overall compiled app with the given configurations
             app = config.make_wsgi_app()
