@@ -24,9 +24,20 @@ img {
 }
 
 button {
-  background-color: black;
+  background-color: rgb(82, 82, 82);
   color: white;
   border: 2px solid blue;
+  padding: 16px 32px;
+  text-align: center;
+  display: inline-block;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+button.hover {
+  background-color: lightblue;
+  color: white;
 }
 
 div {
