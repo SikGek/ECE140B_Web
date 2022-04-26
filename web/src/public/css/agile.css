@@ -12,8 +12,8 @@ p {
 h1 {
   font-style: italic;
   font-size: calc(1rem + 3.5vw);
-  background-color: var(--accent-color);
-  color: var(--light-color);
+  background-color: white;
+  color: white;
   padding: var(--padding-lg) var(--padding-xl);
   margin: var(--margin-lg) auto;
   text-decoration: underline overline
@@ -28,4 +28,8 @@ button {
   background-color: black;
   color: white;
   border: 2px solid blue;
+}
+
+div {
+  color: white;
 }
