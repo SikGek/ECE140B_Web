@@ -16,7 +16,7 @@ h1 {
   padding: var(--padding-lg) var(--padding-xl);
   margin: var(--margin-lg) auto;
   text-decoration: underline overline;
-  line-height: 2.0;
+  padding-bottom: 25px;
 }
 
 img {
@@ -46,5 +46,5 @@ div {
 }
 
 div.big {
-  line-height: 2;
+  padding-bottom: 25px;
 }
