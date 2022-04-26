@@ -43,3 +43,7 @@ button.hover {
 div {
   color: white;
 }
+
+div.big {
+  line-height: 2;
+}
