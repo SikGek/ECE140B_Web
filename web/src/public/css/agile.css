@@ -48,3 +48,7 @@ div {
 div.big {
   padding-bottom: 25px;
 }
+
+table, th, td {
+  border: 2px solid white;
+}
