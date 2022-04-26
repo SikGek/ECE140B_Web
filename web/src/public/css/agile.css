@@ -12,7 +12,6 @@ p {
 h1 {
   font-style: italic;
   font-size: calc(1rem + 3.5vw);
-  background-color: white;
   color: white;
   padding: var(--padding-lg) var(--padding-xl);
   margin: var(--margin-lg) auto;
