@@ -16,6 +16,8 @@ def productf(request):
       return FileResponse('templates/product.html')
 def KVPf(request):
       return FileResponse('templates/KVP.html')
+def uif(request):
+      return FileResponse('templates/ui.html')
 
 
 if __name__ == '__main__':
@@ -25,10 +27,12 @@ if __name__ == '__main__':
             config.add_route('main', '/')
             config.add_route('product', '/product')
             config.add_route('KVP', '/KVP')
+            config.add_route('ui', '/ui')
             # Directs the route to the function that can generate the view
             config.add_view(hello_world, route_name='main')
             config.add_view(productf, route_name='product')
             config.add_view(KVPf, route_name='KVP')
+            config.add_view(uif, route_name='ui')
             config.add_static_view(name='/', path='./public', cache_max_age=3600)
             # This is the overall compiled app with the given configurations
             app = config.make_wsgi_app()
