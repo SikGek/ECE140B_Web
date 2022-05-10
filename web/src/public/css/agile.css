@@ -26,7 +26,6 @@ h2, h3, h4, h5 {
   padding: var(--padding-lg) var(--padding-xl);
   margin: var(--margin-lg) auto;
   text-decoration: underline;
-  padding-bottom: 25px;
 }
 
 img {
@@ -65,4 +64,8 @@ table, th, td {
 
 ul, ol{
   color: white;
+}
+
+li{
+  padding-bottom: 10px;
 }
