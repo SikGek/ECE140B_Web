@@ -62,3 +62,7 @@ div.big {
 table, th, td {
   border: 2px solid white;
 }
+
+ul, ol{
+  color: white;
+}
