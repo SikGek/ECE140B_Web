@@ -19,6 +19,16 @@ h1 {
   padding-bottom: 25px;
 }
 
+h2, h3 {
+  font-style: italic;
+  font-size: calc(1rem + 3.5vw);
+  color: white;
+  padding: var(--padding-lg) var(--padding-xl);
+  margin: var(--margin-lg) auto;
+  text-decoration: underline;
+  padding-bottom: 25px;
+}
+
 img {
   border: 5px solid rgb(255, 255, 255);
 }
