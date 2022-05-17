@@ -20,6 +20,10 @@ def uif(request):
       return FileResponse('templates/ui.html')
 def iaf(request):
       return FileResponse('templates/ia.html')
+def featf(request):
+      return FileResponse('templates/features.html')
+def interf(request):
+      return FileResponse('templates/interactions.html')
 
 
 if __name__ == '__main__':
@@ -31,12 +35,16 @@ if __name__ == '__main__':
             config.add_route('KVP', '/KVP')
             config.add_route('ui', '/ui')
             config.add_route('ia', '/ia')
+            config.add_route('features', '/features')
+            config.add_route('interactions', '/interactions')
             # Directs the route to the function that can generate the view
             config.add_view(hello_world, route_name='main')
             config.add_view(productf, route_name='product')
             config.add_view(KVPf, route_name='KVP')
             config.add_view(uif, route_name='ui')
             config.add_view(iaf, route_name='ia')
+            config.add_view(featf, route_name='features')
+            config.add_view(interf, route_name='interactions')
             config.add_static_view(name='/', path='./public', cache_max_age=3600)
             # This is the overall compiled app with the given configurations
             app = config.make_wsgi_app()
