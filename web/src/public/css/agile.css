@@ -2,6 +2,8 @@ body {
   font-size: calc(1rem + 1vw);
   margin: 0px;
   font-family: var(--font);
+  background-color: #121212;
+  color: #fff;
 }
 p {
   font-size: calc(0.8rem + 1vw);
