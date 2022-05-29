@@ -28,6 +28,8 @@ def costsf(request):
       return FileResponse('templates/costs.html')
 def revenuef(request):
       return FileResponse('templates/revenue.html')
+def pivotf(request):
+      return FileResponse('templates/pivot.html')
 
 
 if __name__ == '__main__':
@@ -43,6 +45,7 @@ if __name__ == '__main__':
             config.add_route('interactions', '/interactions')
             config.add_route('costs', '/costs')
             config.add_route('revenue', '/revenue')
+            config.add_route('pivot', '/pivot')
             # Directs the route to the function that can generate the view
             config.add_view(hello_world, route_name='main')
             config.add_view(productf, route_name='product')
@@ -53,6 +56,7 @@ if __name__ == '__main__':
             config.add_view(interf, route_name='interactions')
             config.add_view(costsf, route_name='costs')
             config.add_view(revenuef, route_name='revenue')
+            config.add_view(pivotf, route_name='pivot')
             config.add_static_view(name='/', path='./public', cache_max_age=3600)
             # This is the overall compiled app with the given configurations
             app = config.make_wsgi_app()
